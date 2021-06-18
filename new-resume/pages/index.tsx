@@ -1,10 +1,11 @@
-import Image from 'next/image'
-import styles from '../styles/Home.module.css'
 
-export default function Home() {
+
+const Home = () => {
   return (
-    <div className={styles.container}>
-      <h1>Next JS APP</h1>
+    <div>
+      <h1 className="text">Hello World</h1>
     </div>
   )
 }
+
+export default Home
