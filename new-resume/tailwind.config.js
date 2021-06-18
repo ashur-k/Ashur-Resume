@@ -4,6 +4,9 @@ module.exports = {
   ],
   darkMode: false, // or 'media' or 'class'
   theme: {
+    fontFamily: {
+      'kaushan': ['Kaushan Script']
+    },
     extend: {},
   },
   variants: {
