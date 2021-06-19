@@ -4,7 +4,7 @@ import ServiceCard from '../components/ServiceCard'
 import { motion } from 'framer-motion'
 import { fadeInUp, routeAnimation, stagger } from '../animations'
 
-const Home = ({endPoint}) => {
+const Home = () => {
  
   return (
     <motion.div 
