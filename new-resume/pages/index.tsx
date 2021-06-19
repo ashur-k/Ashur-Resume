@@ -1,6 +1,8 @@
 import { GetServerSideProps, GetStaticPropsContext } from 'next'
 import { services } from '../data'
 import ServiceCard from '../components/ServiceCard'
+import { motion } from 'framer-motion'
+import { fadeInUp, stagger } from '../animations'
 
 const Home = () => {
  
@@ -22,18 +24,21 @@ const Home = () => {
         <h4 className="my-3 text-xl font-semibold tracking-wide">
           What I am doing
         </h4>
-        <div className="grid gap-6 my-3 md:grid-cols-2">
+        <motion.div className="grid gap-6 my-3 md:grid-cols-2"
+          variants={stagger} initial="initial" animate="animate"
+        >
             {
               services.map(service=> (
-                <div 
+                <motion.div 
+                  variants={fadeInUp}
                   className="col-span-2 p-2 bg-gray-200 rounded-lg dark:bg-dark-200 md:col-span-1 "
                   key={service.title} 
                 >
                   <ServiceCard service={service} />
-                </div>
+                </motion.div>
               ))
             }
-        </div>
+        </motion.div>
       </div>
     </div>
   )
