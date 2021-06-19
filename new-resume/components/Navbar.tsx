@@ -18,29 +18,29 @@ const Navbar = () => {
     }, [pathname])
 
     return (
-        <div className="flex justify-between px-5 py-3 my-3">
+        <div className="flex items-center justify-between px-5 py-3 my-3">
             <span className="font-bold text-green text-xl border-b-4 border-green md:text-2xl">
                 {activeItem}
             </span>
-            <div className="flex space-x-5 text-lg">
+            <div className="space-x-5 text-base font-normal md:text-xl">
                    <NavItem 
                         activeItem={activeItem} 
                         setActiveItem={setActiveItem} 
-                        name='About' 
+                        name='ABOUT' 
                         route='/' 
                     />
                     
                    <NavItem 
                         activeItem={activeItem} 
                         setActiveItem={setActiveItem} 
-                        name='Projects' 
+                        name='PROJECTS' 
                         route='/projects' 
                     />
 
                    <NavItem 
                         activeItem={activeItem} 
                         setActiveItem={setActiveItem} 
-                        name='Resume' 
+                        name='RESUME' 
                         route='/resume' 
                     />           
                 

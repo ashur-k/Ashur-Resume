@@ -11,36 +11,36 @@ export const services: Service[] = [
     Icon: RiComputerLine,
     title: "Frontend Development",
     about:
-      "I can build a beautiful and scalable SPA using <b> HTML</b>,<b>CSS</b>   and <b>React.js</b> ",
+      "I can build a beautiful websites using <b> HTML</b>,<b>CSS</b>   and <b>React.js</b> ",
   },
   {
     Icon: FaServer,
     title: "Backend  Development",
     about:
-      "handle database, server, api using <b>Express </b> & other popular frameworks",
+      "handle database, server, api using <b>Django </b>",
   },
   {
     Icon: AiOutlineApi,
     title: "API Development",
     about:
-      "I can develop robust  REST API using <b>django-rest-api</b>  & <b>Node API</b> ",
+      "I can develop robust REST API using <b>django-rest-api</b> ",
   },
   {
     Icon: MdDeveloperMode,
     title: "Competitive Coder",
-    about: "a daily problem solver in <b>HackerRank</b>  and <b>Leet Code</b> ",
+    about: "a daily problem solver  ",
   },
   {
     Icon: AiOutlineAntDesign,
     title: "UI/UX designer",
     about:
-      "stunning user interface designer using <b>Figma</b>  and  <b>Framer</b> ",
+      "stunning user interface designer using <b>Framer</b> ",
   },
   {
     Icon: RiComputerLine,
-    title: "Whatever",
+    title: "Hosting and E-Commerce",
     about:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic quis minima autem!",
+      "Hosting and Ecommerce <b>Stripe</b> <b>Paypal</b> <b>AWS</b> <b>Heroku</b>",
   },
 ];
 
@@ -102,6 +102,7 @@ export const tools: Skill[] = [
 
 export const projects: Project[] = [
   { 
+    id:1,
     name: "RR-Cloth",
     description:
       "RR-Cloth is a fully functional ecommerce site. This site is able to sell products including all its various variants. The site has been developed using HTML5, CSS3, JavaScript, jQuery, Postgres-SQL, Python-Django. It is hosted using heroku and amazon web services (AWS).The site is implemented with an order/checkout payment system using Stripe. For reliability stripe webhooks are implemented to make sure the site doesn’t lose any order information if there is a system failure at the user end while making a payment.",
@@ -112,6 +113,7 @@ export const projects: Project[] = [
     key_techs: ["Django", "AWS", "Heroku", "Stripe", "AJAX"],
   },
   {
+    id:2,
     name: "Pro-Shop",
     image_path: "/images/pro-shop.jpg",
     deployed_url: "https://proshop-ash.herokuapp.com/#/",
@@ -123,6 +125,7 @@ export const projects: Project[] = [
   },
 
   {
+    id:3,
     name: "Ash-Crown-Online Shopping",
     image_path: "/images/crwn.jpg",
     deployed_url: "https://ash-crwn-live.herokuapp.com/",
@@ -139,6 +142,7 @@ export const projects: Project[] = [
   },
 
   {
+    id:4,
     name: "Jaxx Productions",
     image_path: "/images/jaxx.jpg",
     deployed_url: "https://jacxx-productions.herokuapp.com/",
@@ -150,6 +154,7 @@ export const projects: Project[] = [
   },
 
   {
+    id:5,
     name: "Car Sales Showroom",
     image_path: "/images/car-sales.png",
     deployed_url: "http://car-sales-showroom.herokuapp.com/index",
@@ -161,6 +166,7 @@ export const projects: Project[] = [
   },
 
   {
+    id:6,
     name: "Bend River Media",
     image_path: "/images/benmedia.png",
     deployed_url: "https://ashur-k.github.io/Data-Centric-Milestone-Project/",
@@ -171,6 +177,7 @@ export const projects: Project[] = [
     key_techs: ["JavaScript"],
   },
   {
+    id:7,
     name: "Monster Rolodex",
     image_path: "/images/rolodex.jpg",
     deployed_url: "https://ashur-k.github.io/monsters-rolodex/",
@@ -184,6 +191,7 @@ export const projects: Project[] = [
     ],
   },
   {
+    id:8,
     name: "Boutique Ado",
     image_path: "/images/Boutique_ado.png",
     deployed_url: "https://boutique-ado-ash.herokuapp.com/",
