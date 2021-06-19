@@ -3,8 +3,9 @@ import Sidebar from '../components/Sidebar'
 import Navbar from '../components/Navbar'
 
 import { ThemeProvider } from 'next-themes'
+import { AnimatePresence } from 'framer-motion'
 
-function MyApp({ Component, pageProps }) {
+function MyApp({ Component, pageProps, router }) {
   
   return (
     <ThemeProvider attribute="class">
@@ -14,7 +15,9 @@ function MyApp({ Component, pageProps }) {
         </div>
         <div className="flex flex-col col-span-12 overflow-hidden bg-white shadow-custom-light dark:shadow-custom-dark rounded-2xl lg:col-span-9 dark:bg-dark-500">
           <Navbar />
-          <Component {...pageProps} />
+          <AnimatePresence exitBeforeEnter>
+            <Component {...pageProps} key={router.route}/>
+          </AnimatePresence>
         </div>        
       </div>
 

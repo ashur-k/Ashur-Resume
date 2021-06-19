@@ -4,7 +4,7 @@ import ProjectsNavbar from "../components/ProjectsNavbar";
 import { projects as projectData } from '../data'
 import { Category } from '../types';
 import { motion } from 'framer-motion'
-import { fadeInUp, stagger } from '../animations';
+import { fadeInUp, routeAnimation, stagger } from '../animations';
 
 const Projects = () => {
     const [projects, setProjects] = useState(projectData);
@@ -23,7 +23,7 @@ const Projects = () => {
         setActive(category)
     }
     return (
-        <div>
+        <motion.div variants={routeAnimation} initial="inital" animate="animate" exit="exit">
             <div className="px-5 py-2 overflow-y-scroll" style={{ height: "5vh" }}>
             <ProjectsNavbar
                 handlerFilterCategory={handleFilterCategory}
@@ -45,7 +45,7 @@ const Projects = () => {
                     </motion.div>
                 ))}
             </motion.div>
-        </div>
+        </motion.div>
     )
 }
 

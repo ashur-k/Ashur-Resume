@@ -2,12 +2,15 @@ import { GetServerSideProps, GetStaticPropsContext } from 'next'
 import { services } from '../data'
 import ServiceCard from '../components/ServiceCard'
 import { motion } from 'framer-motion'
-import { fadeInUp, stagger } from '../animations'
+import { fadeInUp, routeAnimation, stagger } from '../animations'
 
 const Home = () => {
  
   return (
-    <div className="flex flex-col flex-grow px-6 pt-1 ">
+    <motion.div 
+      className="flex flex-col flex-grow px-6 pt-1"
+      variants={routeAnimation} initial="inital" animate="animate" exit="exit"
+    >
       <h5 className="my-3 text-base font-medium">
         Full Stack Web Developer, qualified with a Diploma 
         in Software Development from Code Institute (CI) 
@@ -40,7 +43,7 @@ const Home = () => {
             }
         </motion.div>
       </div>
-    </div>
+    </motion.div>
   )
 }
 
