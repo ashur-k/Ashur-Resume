@@ -4,7 +4,7 @@ import ServiceCard from '../components/ServiceCard'
 import { motion } from 'framer-motion'
 import { fadeInUp, routeAnimation, stagger } from '../animations'
 
-const Home = () => {
+const Home = ({endPoint}) => {
  
   return (
     <motion.div 
@@ -49,17 +49,13 @@ const Home = () => {
 
 export default Home
 
-// export const getServerSideProps = async (context:GetServerSideProps) => {
+export const getServerSideProps = async (context:GetServerSideProps) => {
   
-//   const res = await fetch('http://localhost:3000/api/services')
-//   const data = await res.json()
+  const res = await fetch(`${process.env.VERCEL_URL}/api/services`)
+  // const data = await res.json()
 
-//   return {
-//     props:{
-//       services: data.services,
-//     }
-//   }
-// } 
+  return { props:{ endpoint: process.env.VERCEL_URL, } }
+} 
 
 // export const getStaticProps = async (
   
