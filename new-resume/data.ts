@@ -104,22 +104,22 @@ export const projects: Project[] = [
   { 
     name: "RR-Cloth",
     description:
-      "This app shows a statistical view about corona virus over the world",
+      "RR-Cloth is a fully functional ecommerce site. This site is able to sell products including all its various variants. The site has been developed using HTML5, CSS3, JavaScript, jQuery, Postgres-SQL, Python-Django. It is hosted using heroku and amazon web services (AWS).The site is implemented with an order/checkout payment system using Stripe. For reliability stripe webhooks are implemented to make sure the site doesn’t lose any order information if there is a system failure at the user end while making a payment.",
     image_path: "/images/RR-cloth.png",
     deployed_url: "https://rr-cloth.herokuapp.com/",
     github_url: "https://github.com/ashur-k/RR-Clothes",
-    category: ["react", "django"],
-    key_techs: ["React", "Chart.js", "Material UI"],
+    category: ["django"],
+    key_techs: ["Django", "AWS", "Heroku", "Stripe", "AJAX"],
   },
   {
     name: "Pro-Shop",
     image_path: "/images/pro-shop.jpg",
     deployed_url: "https://proshop-ash.herokuapp.com/#/",
     github_url: "https://github.com/ashur-k/proshop-ash",
-    category: ["react"],
+    category: ["react", "django"],
     description:
-      "An web app which shows how an algorithm (path finding or sorting) works with cool animation",
-    key_techs: ["React", "firebase", "Framer Motion"],
+      "Pro-shop is an ecommerce site which has been developed using HTML5,  CSS3, React, React-Redux, Postgres-SQL, Python-Django Rest Framework. It is hosted using heroku and amazon web services (AWS). The site is implemented with an order/checkout payment system using paypal.",
+    key_techs: ["React", "Redux", "Bootstrap", "Django", "Postgres"],
   },
 
   {
@@ -127,17 +127,14 @@ export const projects: Project[] = [
     image_path: "/images/crwn.jpg",
     deployed_url: "https://ash-crwn-live.herokuapp.com/",
     github_url: "https://github.com/ashur-k/crwn-clothing-v1-follow-along",
-    category: ["node", "mongo", "react"],
+    category: ["react", ],
     description:
-      "Social Media app for developers who can share project,create posts,etc...",
+      "Ash-Crown is an ecommerce site which has been developed using HTML5, CSS3, React, React-Redux, Firebase. It is hosted using heroku. The site is implemented with an order/checkout payment system using stripe. Site is purely built in React and its an ongoing project which I am hoping to compltely finish soon",
     key_techs: [
       "React",
       "Redux",
-      "Node",
-      "Express",
-      "Mongo",
-      "REST API",
-      "Bootstrap",
+      "Firebase",
+      "sass css",
     ],
   },
 
@@ -146,10 +143,10 @@ export const projects: Project[] = [
     image_path: "/images/jaxx.jpg",
     deployed_url: "https://jacxx-productions.herokuapp.com/",
     github_url: "https://github.com/ashur-k/E-Commerce-AND-Video-Subscription",
-    category: ["node", "react"],
+    category: ["django", "JavaScript"],
     description:
-      "Basic Realtime Chat App where one can create a room can talk to each other",
-    key_techs: ["React", "Node", "Express", "Socket", "Bootstrap"],
+      " Jaxx Productions is built using Html, CSS, JavaScript and and Django",
+    key_techs: ["Django", "JavaScript"],
   },
 
   {
@@ -157,9 +154,9 @@ export const projects: Project[] = [
     image_path: "/images/car-sales.png",
     deployed_url: "http://car-sales-showroom.herokuapp.com/index",
     github_url: "https://github.com/ashur-k/CI-MS3-Car-Showroom",
-    category: ["flask", "react"],
+    category: ["flask", "mongo"],
     description:
-      "First Django Project :) | Typical Social Media App where one can post,like ,comment etc",
+      "Car Sales Showroom is a management system where Admin can  manage and book appointments for people who are interested in buying a car. A site user can find a car that they are interested  in and then they can book a test drive for that car. Project has been developed using HTML5, CSS3, json, JavaScript, jQuery, Mongodb, Python-Flask and materializecss. Project is hosted using heroku",
     key_techs: ["React", "Django", "Django REST API"],
   },
 
@@ -168,10 +165,10 @@ export const projects: Project[] = [
     image_path: "/images/benmedia.png",
     deployed_url: "https://ashur-k.github.io/Data-Centric-Milestone-Project/",
     github_url: "https://github.com/ashur-k/Data-Centric-Milestone-Project",
-    category: ["react"],
+    category: ["JavaScript"],
     description:
-      "Tried ML with JS :) | this app classifies a color using CNN algorithm in browser",
-    key_techs: ["Express", "TensorFlow.js", "Vanilla js"],
+      " Bend River Media has been developed for a local photographer and videographer. The site has been developed using HTML5, CSS3, and bootstrap. Project is hosted using GitHub. The site is very detailed and comprehensive and shows all aspects of a business site.",
+    key_techs: ["JavaScript"],
   },
   {
     name: "Monster Rolodex",
@@ -180,14 +177,10 @@ export const projects: Project[] = [
     github_url: "https://github.com/ashur-k/monsters-rolodex",
     category: ["react"],
     description:
-      'Full(almost) Functional YouTube replica where one can login with his/her youtube account to enjoy "not-YouTube".User can like a video,comment on a video & Much More ',
+      'Its built using react and hosted using github for learning and training.',
     key_techs: [
       "React",
-      "Redux",
-      "Firebase Auth",
-      "YouTube API",
-      "Sass",
-      "Bootstrap",
+      "Sass css",
     ],
   },
   {
@@ -195,9 +188,9 @@ export const projects: Project[] = [
     image_path: "/images/Boutique_ado.png",
     deployed_url: "https://boutique-ado-ash.herokuapp.com/",
     github_url: "https://github.com/ashur-k/bouttique_ado_v1",
-    category: ["react"],
+    category: ["django"],
     description:
-      "o my goal replica where an user can keep an eye on his favorite club.This app will keep providing \n all the statistics of that club.all the fans can also chat ",
-    key_techs: ["React", "Redux", "Firebase Auth", "API", "Sass", "Bootstrap"],
+    "Boutique-ado is an ecommerce site which has been developed using HTML5, CSS3, JavaScript, jQuery, Postgres-SQL, Python-Django. It is hosted using heroku and amazon web services (AWS). The site is implemented with an order/checkout payment system using Stripe. For reliability stripe webhooks are implemented to make sure the site doesn’t lose any order information if there is a system failure at the user end while making a payment.",
+    key_techs: ["django", "Bootstrap"],
   },
 ];

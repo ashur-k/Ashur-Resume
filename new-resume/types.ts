@@ -22,4 +22,4 @@ export interface Project {
   key_techs: string[];
 }
 
-export type Category = "react" | "node" | "flask" | "django" | "mongo";
+export type Category = "react" | "JavaScript" | "flask" | "django" | "mongo" ;
