@@ -12,7 +12,7 @@ export interface Skill {
   level: string;
 }
 
-export interface IProject {
+export interface Project {
   name: string;
   description: string;
   image_path: string;
@@ -22,4 +22,4 @@ export interface IProject {
   key_techs: string[];
 }
 
-export type Category = "react" | "node" | "express" | "django" | "mongo";
+export type Category = "react" | "node" | "flask" | "django" | "mongo";
