@@ -2,6 +2,7 @@ module.exports = {
   purge: [
     './pages/**/*.tsx', './components/**/*.tsx'
   ],
+  darMode: "class",
   darkMode: false, // or 'media' or 'class'
   theme: {
     fontFamily: {
