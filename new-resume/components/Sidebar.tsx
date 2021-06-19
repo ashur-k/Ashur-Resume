@@ -14,10 +14,13 @@ const Sidebar = () => {
     
     return (
         <div>
-            <img 
-                src='https://media-exp1.licdn.com/dms/image/C4E35AQGRJrDMRnTFqg/profile-framedphoto-shrink_200_200/0/1612390417326?e=1624129200&v=beta&t=ajBAWBlbfszr8yY_McmnECV3jijwEvP8hGea0-GML18'
+            <Image
+                src='/images/ash.jpg'
                 alt="img"
-                className="w-32 h-32 mx-auto border rounded-full"
+                className="mx-auto border rounded-full"
+                height="128px"
+                width="128px"
+                layout="responsive"
             />
             <h3 className="my-4 text-3xl font-medium tracking-wider font-kaushan">
                 <span className="text-green">Ashur </span>Kanwal
