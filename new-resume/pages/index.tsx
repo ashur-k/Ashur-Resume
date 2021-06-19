@@ -1,10 +1,10 @@
-import { GetServerSideProps, GetStaticPropsContext } from 'next'
+import { GetServerSideProps, GetStaticPropsContext, NextPage } from 'next'
 import { services } from '../data'
 import ServiceCard from '../components/ServiceCard'
 import { motion } from 'framer-motion'
 import { fadeInUp, routeAnimation, stagger } from '../animations'
 
-const Home = () => {
+const Home = ({props}) => {
  
   return (
     <motion.div 
