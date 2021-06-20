@@ -10,7 +10,9 @@ import ServiceCard from "../components/ServiceCard";
 import { services } from "../data";
 import { Service } from "../types";
 import { motion } from 'framer-motion'
-const Home = () => {
+
+
+export default function Home () {
  
   return (
     <motion.div 
@@ -24,7 +26,7 @@ const Home = () => {
         institute of management science and technology (PIMSAT). 
         Strong understanding of object-oriented programming and 18 
         months experience of web-development. I am developing my 
-        skills set to be a great asset for my employer.  
+        skills set to be a great asset for my employer.
       </h5>
       <div
         className="flex-grow p-4 mt-5 bg-gray-400 dark:bg-dark-100 "
@@ -53,7 +55,7 @@ const Home = () => {
   )
 }
 
-export default Home
+
 
 // export const getServerSideProps = async (context:GetServerSideProps) => {
   
