@@ -12,8 +12,8 @@ import { Service } from "../types";
 import { motion } from 'framer-motion'
 
 
-export default function Home () {
- 
+const Home = ({endpoint}) => {
+ console.log(endpoint)
   return (
     <motion.div 
       className="flex flex-col flex-grow px-6 pt-1"
@@ -55,15 +55,15 @@ export default function Home () {
   )
 }
 
+export default Home
 
-
-// export const getServerSideProps = async (context:GetServerSideProps) => {
+export const getServerSideProps = async (context:GetServerSideProps) => {
   
-//   const res = await fetch(`${process.env.VERCEL_URL}/api/services`)
-//   // const data = await res.json()
+  const res = await fetch(`${process.env.VERCEL_URL}/api/services`)
+  // const data = await res.json()
 
-//   return { props:{ endpoint: process.env.VERCEL_URL, } }
-// } 
+  return { props:{ endpoint: process.env.VERCEL_URL, } }
+} 
 
 // export const getStaticProps = async (
   
