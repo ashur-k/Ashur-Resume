@@ -57,7 +57,7 @@ const Home = ({endpoint}) => {
 
 export default Home
 
-export const getServerSideProps = async (context:GetServerSideProps) => {
+export const getStaticProps = async (context: GetStaticPropsContext) => {
   
   const res = await fetch(`${process.env.VERCEL_URL}/api/services`)
   // const data = await res.json()
