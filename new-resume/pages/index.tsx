@@ -12,8 +12,8 @@ import { Service } from "../types";
 import { motion } from 'framer-motion'
 
 
-const Home = ({endpoint}) => {
- console.log(endpoint)
+const Home = () => {
+
   return (
     <motion.div 
       className="flex flex-col flex-grow px-6 pt-1"
@@ -56,27 +56,3 @@ const Home = ({endpoint}) => {
 }
 
 export default Home
-
-export const getStaticProps = async (context: GetStaticPropsContext) => {
-  
-  const res = await fetch(`${process.env.VERCEL_URL}/api/services`)
-  // const data = await res.json()
-
-  return { props:{ endpoint: process.env.VERCEL_URL, } }
-} 
-
-// export const getStaticProps = async (
-  
-//   context:GetStaticPropsContext
-  
-//   ) => {
-  
-//   const res = await fetch('http://localhost:3000/api/services')
-//   const data = await res.json()
-
-//   return {
-//     props:{
-//       services: data.services,
-//     }
-//   }
-// } 
