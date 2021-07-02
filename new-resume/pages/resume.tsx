@@ -1,10 +1,14 @@
 import Bar from "../components/Bar";
 import React from 'react'
-import { languages, tools } from "../data";
+// import { languages, tools } from "../data";
 import { motion } from 'framer-motion'
 import {fadeInUp, routeAnimation} from '../animations'
+import { Skill } from "../types";
 
-const Resume = () => {
+const Resume = ({languages, tools}) => {
+
+  const newLanguages: Skill[] = languages
+  const newTools: Skill[] = tools
 
     return (
         <motion.div className="px-6 py-2" 
@@ -46,7 +50,7 @@ const Resume = () => {
           <div>
             <h5 className="my-3 text-2xl font-bold">Language & Framework</h5>
             <div className="my-2">
-              {languages.map((language, i) => (
+              {newLanguages.map((language, i) => (
                 <Bar value={language} key={i} />
               ))}
             </div>
@@ -55,7 +59,7 @@ const Resume = () => {
           <div>
             <h5 className="my-3 text-2xl font-bold">Tools & Softwares</h5>
             <div className="my-2">
-              {tools.map((tool, i) => (
+              {newTools.map((tool, i) => (
                 <Bar value={tool} key={i} />
               ))}
             </div>
@@ -64,5 +68,18 @@ const Resume = () => {
       </motion.div>
     )
 }
-
 export default Resume
+
+Resume.getInitialProps = async () => {
+
+
+  const res = await fetch('https://ash-pizza-website.herokuapp.com/api/languages/');
+  const languages = await res.json();
+  const res1 = await fetch(`https://ash-pizza-website.herokuapp.com/api/tools/`);
+  const tools = await res1.json();
+
+  return {
+    languages: languages,
+    tools: tools,
+  };
+};

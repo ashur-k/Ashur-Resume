@@ -1,13 +1,13 @@
 import { IconType } from "react-icons";
 
 export interface Service {
-  Icon: IconType;
+  id: Number;
+  Icon: string;
   title: string;
   about: string;
 }
 
 export interface Skill {
-  Icon: IconType;
   name: string;
   level: string;
 }
@@ -23,4 +23,4 @@ export interface Project {
   key_techs: string[];
 }
 
-export type Category = "react" | "JavaScript" | "flask" | "django" | "mongo" ;
+export type Category = "react" | "JavaScript" | "nextjs" | "typescript" | "flask" | "django" | "mongo" | "main-acheivements" ;

@@ -7,12 +7,12 @@ import {
 } from "next";
 import { fadeInUp, routeAnimation, stagger } from "../animations";
 import ServiceCard from "../components/ServiceCard";
-import { services } from "../data";
 import { Service } from "../types";
 import { motion } from 'framer-motion'
 
 
-const Home = () => {
+const Home = ({skills}) => {
+  const newSkills: Service[] = skills
 
   return (
     <motion.div 
@@ -39,7 +39,7 @@ const Home = () => {
           variants={stagger} initial="initial" animate="animate"
         >
             {
-              services.map(service=> (
+              newSkills.map(service=> (
                 <motion.div 
                   variants={fadeInUp}
                   className="col-span-2 p-2 bg-gray-200 rounded-lg dark:bg-dark-200 md:col-span-1 "
@@ -54,5 +54,20 @@ const Home = () => {
     </motion.div>
   )
 }
+
+export const getStaticProps = async({params}) => {
+
+  const res = await fetch('https://ash-pizza-website.herokuapp.com/api/skills/');
+  const skills: Service[] = await res.json();
+
+  // console.log('MyData', skills)
+  
+  return {
+    props: {
+      skills
+    },
+    }
+  }
+
 
 export default Home

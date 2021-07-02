@@ -1,12 +1,17 @@
 import { useState} from 'react'
 import ProjectCard from "../components/ProjectCard";
 import ProjectsNavbar from "../components/ProjectsNavbar";
-import { projects as projectData } from '../data'
+// import { projects as projectData } from '../data'
 import { Category } from '../types';
 import { motion } from 'framer-motion'
 import { fadeInUp, routeAnimation, stagger } from '../animations';
+import { Project } from '../types';
 
-const Projects = () => {
+
+const Projects = ({backendProjects}) => {
+
+    const projectData: Project[] = backendProjects
+
     const [projects, setProjects] = useState(projectData);
     const [active, setActive] = useState("all")
 
@@ -50,5 +55,18 @@ const Projects = () => {
         </motion.div>
     )
 }
+
+export const getStaticProps = async({params}) => {
+
+    const res = await fetch('https://ash-pizza-website.herokuapp.com/api/projects/');
+    const backendProjects = await res.json();
+
+    return {
+      props: {
+        backendProjects
+      },
+      }
+    }
+
 
 export default Projects

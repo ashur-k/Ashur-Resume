@@ -8,36 +8,42 @@ import { BsCircleFill } from "react-icons/bs";
 
 export const services: Service[] = [
   {
-    Icon: RiComputerLine,
+    id: 1,
+    Icon: 'RiComputerLine',
     title: "Frontend Development",
     about:
-      "I can build a beautiful websites using <b> HTML</b>,<b>CSS</b>   and <b>React.js</b> ",
+      "I can build a beautiful websites using <b> HTML</b>,<b>CSS</b> and <b>React.js</b> ",
   },
   {
-    Icon: FaServer,
+    id: 2,
+    Icon: 'FaServer',
     title: "Backend  Development",
     about:
       "handle database, server, api using <b>Django </b>",
   },
   {
-    Icon: AiOutlineApi,
+    id: 3,
+    Icon: 'AiOutlineApi',
     title: "API Development",
     about:
       "I can develop robust REST API using <b>django-rest-api</b> ",
   },
   {
-    Icon: MdDeveloperMode,
+    id: 4,
+    Icon: 'MdDeveloperMode',
     title: "Competitive Coder",
     about: "a daily problem solver  ",
   },
   {
-    Icon: AiOutlineAntDesign,
+    id: 5,
+    Icon: 'AiOutlineAntDesign',
     title: "UI/UX designer",
     about:
       "stunning user interface designer using <b>Framer</b> ",
   },
   {
-    Icon: RiComputerLine,
+    id: 6,
+    Icon: 'RiComputerLine',
     title: "Hosting and E-Commerce",
     about:
       "Hosting and Ecommerce <b>Stripe</b> <b>Paypal</b> <b>AWS</b> <b>Heroku</b>",
@@ -46,32 +52,27 @@ export const services: Service[] = [
 
 export const languages: Skill[] = [
   {
-    Icon: BsCircleFill,
     name: "Python",
     level: "70",
   },
   {
-    Icon: BsCircleFill,
     name: "Java Script",
     level: "70",
   },
   {
-    Icon: BsCircleFill,
-    name: "React Native",
+    name: "React",
     level: "80",
   },
   {
-    Icon: BsCircleFill,
     name: "React",
     level: "60",
   },
   {
-    Icon: BsCircleFill,
+
     name: "Django",
     level: "90",
   },
   {
-    Icon: BsCircleFill,
     name: "Bootstrap",
     level: "95",
   },
@@ -79,24 +80,20 @@ export const languages: Skill[] = [
 
 export const tools: Skill[] = [
   {
-    Icon: BsCircleFill,
     name: "CSS3",
     level: "85",
   },
   {
-    Icon: BsCircleFill,
     name: "Materializcss",
-    level: "45",
+    level: "75",
   },
   {
-    Icon: BsCircleFill,
     name: "R-Bootstrap",
     level: "60",
   },
   {
-    Icon: BsCircleFill,
     name: "Framer",
-    level: "45",
+    level: "65",
   },
 ];
 

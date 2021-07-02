@@ -1,9 +1,10 @@
 import { FunctionComponent } from "react";
 import { Skill } from "../types";
 import { motion } from 'framer-motion'
+import { BsCircleFill } from "react-icons/bs";
 
 const Bar: FunctionComponent<{ value: Skill }> = ({
-  value: { Icon, level, name },
+  value: {level, name},
 }) => {
   const bar_width = `${level}%`;
 
@@ -31,7 +32,8 @@ const Bar: FunctionComponent<{ value: Skill }> = ({
         initial="initial"
         animate="animate"
       >
-        <Icon className="mr-3" /> {name}
+      <BsCircleFill className="mr-3" /> 
+       {name} 
       </motion.div>
     </div>
   );
