@@ -5,10 +5,10 @@ import { motion } from 'framer-motion'
 import {fadeInUp, routeAnimation} from '../animations'
 import { Skill } from "../types";
 
-const Resume = ({languages, tools}) => {
+const Resume = ({props}) => {
 
-  const newLanguages: Skill[] = languages
-  const newTools: Skill[] = tools
+  const newLanguages: Skill[] = props.languages
+  const newTools: Skill[] = props.tools
 
     return (
         <motion.div className="px-6 py-2" 
@@ -79,7 +79,10 @@ Resume.getInitialProps = async () => {
   const tools = await res1.json();
 
   return {
-    languages: languages,
-    tools: tools,
+    props:{
+      languages: languages,
+      tools: tools,
+    },
+    revalidate:10 
   };
 };

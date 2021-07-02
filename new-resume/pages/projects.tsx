@@ -64,7 +64,8 @@ export const getStaticProps = async({params}) => {
     return {
       props: {
         backendProjects
-      },
+        },
+        revalidate:5
       }
     }
 
