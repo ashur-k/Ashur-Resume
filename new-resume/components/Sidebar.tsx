@@ -26,7 +26,7 @@ const Sidebar = () => {
                 <span className="text-green">Ashur </span>Kanwal
             </h3>
             <p className="px-2 py-1 my-3 bg-gray-200 rounded-full dark:bg-dark-200 dark:bg-black-500">
-                Fullstack Web Developer
+                Full Stack Web Developer
             </p>
             <a 
                 className="flex items-center justify-center px-2 py-1 my-2 bg-gray-200 rounded-full cursor-pointer dark:bg-dark-200 dark:bg-black-500"
@@ -51,7 +51,7 @@ const Sidebar = () => {
                     <span>Grangemouth, Scotland</span>
                 </div>
                 <p className="my-2">ashurkanwal@yahoo.com</p>
-                <p className="my-2">0739732523</p>
+                <p className="my-2">07397325523</p>
              {/** Button */}
              <button 
              className="w-8/12 px-5 py-2 text-white bg-black rounded-full cursor-pointer bg-gradient-to-r from-green to-blue-500 hover:scale-105 focus:outline-none"

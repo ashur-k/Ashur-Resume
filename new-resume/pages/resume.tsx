@@ -21,7 +21,7 @@ const Resume = ({props}) => {
             <h5 className="my-3 text-2xl font-bold">Education</h5>
             <div className="">
               <h5 className="my-2 text-xl font-bold">
-                Fullstacke Web Development 
+                Full Stack Web Development 
               </h5>
               <p className="font-semibold">Software Development diploma CI. Accredited by the Napier university, Edinburgh  (2019-2020)</p>
               <h5 className="my-2 text-xl font-bold">
