@@ -14,7 +14,7 @@ const ProjectsNavbar: FunctionComponent<{
         <ProjectNavbarItems value="JavaScript" {...props} />
         <ProjectNavbarItems value="nextjs" {...props} />
         <ProjectNavbarItems value="typescript" {...props} />
-        <ProjectNavbarItems value="main-acheivements" {...props} />
+        <ProjectNavbarItems value="main-projects" {...props} />
       </div>
     );
   };
