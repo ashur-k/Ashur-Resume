@@ -11,7 +11,6 @@ const ProjectsNavbar: FunctionComponent<{
         <ProjectNavbarItems value="react" {...props} />
         <ProjectNavbarItems value="mongo" {...props} />
         <ProjectNavbarItems value="django" {...props} />
-        <ProjectNavbarItems value="JavaScript" {...props} />
         <ProjectNavbarItems value="nextjs" {...props} />
         <ProjectNavbarItems value="typescript" {...props} />
         <ProjectNavbarItems value="main-projects" {...props} />
