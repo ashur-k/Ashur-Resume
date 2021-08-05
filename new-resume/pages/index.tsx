@@ -20,13 +20,15 @@ const Home = ({skills}) => {
       variants={routeAnimation} initial="inital" animate="animate" exit="exit"
     >
       <h5 className="my-3 text-base font-medium">
-        Full Stack Web Developer, qualified with a Diploma 
+        I am Full Stack Web Developer, qualified with a Diploma 
         in Software Development from Code Institute (CI) 
         and software engineering degree from Pakistan 
         institute of management science and technology (PIMSAT). 
-        Strong understanding of object-oriented programming and 18 
-        months experience of web-development. I am developing my 
-        skills set to be a great asset for my employer.
+        I have strong understanding of object-oriented programming and more than two years
+        experience of web-development. I have developed skills set to become a good full-stack
+        developer.
+        I am competitive, hard working and have strong work ethics. I enjoy cooking, 
+        baking and inviting firends for meals.
       </h5>
       <div
         className="flex-grow p-4 mt-5 bg-gray-400 dark:bg-dark-100 "

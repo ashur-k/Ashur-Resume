@@ -14,7 +14,6 @@ const Projects = ({backendProjects}) => {
 
     const [projects, setProjects] = useState(projectData);
     const [active, setActive] = useState("all")
-
     const [ showDetail, setShowDetail ] = useState<number|null>(null)
 
     const handleFilterCategory = (category: Category | 'all') => {
@@ -32,13 +31,14 @@ const Projects = ({backendProjects}) => {
     return (
         <motion.div variants={routeAnimation} initial="inital" animate="animate" exit="exit">
             <div className="px-5 py-2 overflow-y-scroll" style={{ height: "5vh" }}>
-            <ProjectsNavbar
-                handlerFilterCategory={handleFilterCategory}
-                active={active}
-            />
+                <ProjectsNavbar
+                    handlerFilterCategory={handleFilterCategory}
+                    active={active}
+                />
             </div>
 
-            <motion.div className="relative grid grid-cols-12 gap-4 my-3"
+            <motion.div className="relative grid grid-cols-12 gap-4 my-3 m-auto"
+                style={{ padding:"25px", marginBottom:"100%" }}
                 variants={stagger} initial="initial" animate="animate"
             >
                 {
