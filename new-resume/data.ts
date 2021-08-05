@@ -147,7 +147,7 @@ export const projects: Project[] = [
     category: ["django", "JavaScript"],
     description:
       " Jaxx Productions is built using Html, CSS, JavaScript and and Django",
-    key_techs: ["Django", "JavaScript"],
+    key_techs: ["Django", "main-projects"],
   },
 
   {
@@ -171,7 +171,7 @@ export const projects: Project[] = [
     category: ["JavaScript"],
     description:
       " Bend River Media has been developed for a local photographer and videographer. The site has been developed using HTML5, CSS3, and bootstrap. Project is hosted using GitHub. The site is very detailed and comprehensive and shows all aspects of a business site.",
-    key_techs: ["JavaScript"],
+    key_techs: ["main-projects"],
   },
   {
     id:7,
