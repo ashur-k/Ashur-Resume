@@ -144,7 +144,7 @@ export const projects: Project[] = [
     image_path: "/images/jaxx.jpg",
     deployed_url: "https://jacxx-productions.herokuapp.com/",
     github_url: "https://github.com/ashur-k/E-Commerce-AND-Video-Subscription",
-    category: ["django", "JavaScript"],
+    category: ["django", "main-projects"],
     description:
       " Jaxx Productions is built using Html, CSS, JavaScript and and Django",
     key_techs: ["Django", "main-projects"],
@@ -168,7 +168,7 @@ export const projects: Project[] = [
     image_path: "/images/benmedia.png",
     deployed_url: "https://ashur-k.github.io/Data-Centric-Milestone-Project/",
     github_url: "https://github.com/ashur-k/Data-Centric-Milestone-Project",
-    category: ["JavaScript"],
+    category: ["main-projects"],
     description:
       " Bend River Media has been developed for a local photographer and videographer. The site has been developed using HTML5, CSS3, and bootstrap. Project is hosted using GitHub. The site is very detailed and comprehensive and shows all aspects of a business site.",
     key_techs: ["main-projects"],
