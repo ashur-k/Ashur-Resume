@@ -23,4 +23,5 @@ export interface Project {
   key_techs: string[];
 }
 
+
 export type Category = "react" | "nextjs" | "typescript" | "flask" | "django" | "mongo" | "main-projects" ;

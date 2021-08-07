@@ -98,8 +98,8 @@ export const tools: Skill[] = [
 ];
 
 export const projects: Project[] = [
-  { 
-    id:1,
+  {
+    id: 1,
     name: "RR-Cloth",
     description:
       "RR-Cloth is a fully functional ecommerce site. This site is able to sell products including all its various variants. The site has been developed using HTML5, CSS3, JavaScript, jQuery, Postgres-SQL, Python-Django. It is hosted using heroku and amazon web services (AWS).The site is implemented with an order/checkout payment system using Stripe. For reliability stripe webhooks are implemented to make sure the site doesn’t lose any order information if there is a system failure at the user end while making a payment.",
@@ -110,7 +110,7 @@ export const projects: Project[] = [
     key_techs: ["Django", "AWS", "Heroku", "Stripe", "AJAX"],
   },
   {
-    id:2,
+    id: 2,
     name: "Pro-Shop",
     image_path: "/images/pro-shop.jpg",
     deployed_url: "https://proshop-ash.herokuapp.com/#/",
@@ -122,12 +122,12 @@ export const projects: Project[] = [
   },
 
   {
-    id:3,
+    id: 3,
     name: "Ash-Crown-Online Shopping",
     image_path: "/images/crwn.jpg",
     deployed_url: "https://ash-crwn-live.herokuapp.com/",
     github_url: "https://github.com/ashur-k/crwn-clothing-v1-follow-along",
-    category: ["react", ],
+    category: ["react",],
     description:
       "Ash-Crown is an ecommerce site which has been developed using HTML5, CSS3, React, React-Redux, Firebase. It is hosted using heroku. The site is implemented with an order/checkout payment system using stripe. Site is purely built in React and its an ongoing project which I am hoping to compltely finish soon",
     key_techs: [
@@ -139,19 +139,19 @@ export const projects: Project[] = [
   },
 
   {
-    id:4,
+    id: 4,
     name: "Jaxx Productions",
     image_path: "/images/jaxx.jpg",
     deployed_url: "https://jacxx-productions.herokuapp.com/",
     github_url: "https://github.com/ashur-k/E-Commerce-AND-Video-Subscription",
-    category: ["django", "main-projects"],
+    category: ["django", "react", "main-projects"],
     description:
       " Jaxx Productions is built using Html, CSS, JavaScript and and Django",
-    key_techs: ["Django", "main-projects"],
+    key_techs: ["Django", "JavaScript"],
   },
 
   {
-    id:5,
+    id: 5,
     name: "Car Sales Showroom",
     image_path: "/images/car-sales.png",
     deployed_url: "http://car-sales-showroom.herokuapp.com/index",
@@ -163,7 +163,7 @@ export const projects: Project[] = [
   },
 
   {
-    id:6,
+    id: 6,
     name: "Bend River Media",
     image_path: "/images/benmedia.png",
     deployed_url: "https://ashur-k.github.io/Data-Centric-Milestone-Project/",
@@ -171,10 +171,10 @@ export const projects: Project[] = [
     category: ["main-projects"],
     description:
       " Bend River Media has been developed for a local photographer and videographer. The site has been developed using HTML5, CSS3, and bootstrap. Project is hosted using GitHub. The site is very detailed and comprehensive and shows all aspects of a business site.",
-    key_techs: ["main-projects"],
+    key_techs: ["JavaScript"],
   },
   {
-    id:7,
+    id: 7,
     name: "Monster Rolodex",
     image_path: "/images/rolodex.jpg",
     deployed_url: "https://ashur-k.github.io/monsters-rolodex/",
@@ -188,14 +188,14 @@ export const projects: Project[] = [
     ],
   },
   {
-    id:8,
+    id: 8,
     name: "Boutique Ado",
     image_path: "/images/Boutique_ado.png",
     deployed_url: "https://boutique-ado-ash.herokuapp.com/",
     github_url: "https://github.com/ashur-k/bouttique_ado_v1",
     category: ["django"],
     description:
-    "Boutique-ado is an ecommerce site which has been developed using HTML5, CSS3, JavaScript, jQuery, Postgres-SQL, Python-Django. It is hosted using heroku and amazon web services (AWS). The site is implemented with an order/checkout payment system using Stripe. For reliability stripe webhooks are implemented to make sure the site doesn’t lose any order information if there is a system failure at the user end while making a payment.",
+      "Boutique-ado is an ecommerce site which has been developed using HTML5, CSS3, JavaScript, jQuery, Postgres-SQL, Python-Django. It is hosted using heroku and amazon web services (AWS). The site is implemented with an order/checkout payment system using Stripe. For reliability stripe webhooks are implemented to make sure the site doesn’t lose any order information if there is a system failure at the user end while making a payment.",
     key_techs: ["django", "Bootstrap"],
   },
 ];
